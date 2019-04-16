@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() 
-{     int arrival_time[10], burst_time[10], temp[10],x=0;
+{     int arrival_time[10], burst_time[10], temp[10],x=0,estimate_time,arrived_time;
 double a[100],b[100];
       int i, smallest, count = 0, time, limit;
       double wait_time = 0, turnaround_time = 0, end;
@@ -64,10 +64,10 @@ printf("\n\t *******************************************************");
       }
       
       
-      
-      
-      
-      	printf("\n\n\n                FINAL DATA IS=\n");
+      	int priority1;
+		  priority1=1+(arrived_time/estimate_time);
+    
+      		printf("\n\n\n                FINAL DATA IS=\n");
       	
       	
       	
